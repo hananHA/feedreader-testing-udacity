@@ -29,7 +29,7 @@ $(function() {
          */
         it('has a URL defined and is not empty', function() {
             allFeeds.forEach(function(feed) {
-                url = feed.url;
+                feedUrl = feed.url;
                 expect(url).toBeDefined();
                 expect(url.length).not.toBe(0);
             });
@@ -41,7 +41,7 @@ $(function() {
          */
         it('has a name defined and is not empty', function() {
             allFeeds.forEach(function(feed) {
-                name = feed.name;
+                feedName = feed.name;
                 expect(name).toBeDefined();
                 expect(name.length).not.toBe(0);
             });
