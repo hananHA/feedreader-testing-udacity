@@ -28,6 +28,7 @@ $(function() {
          * and that the URL is not empty.
          */
         it('has a URL defined and is not empty', function() {
+            var feedUrl;
             allFeeds.forEach(function(feed) {
                 feedUrl = feed.url;
                 expect(feedUrl).toBeDefined();
@@ -40,6 +41,7 @@ $(function() {
          * and that the name is not empty.
          */
         it('has a name defined and is not empty', function() {
+            var feedName;
             allFeeds.forEach(function(feed) {
                 feedName = feed.name;
                 expect(feedName).toBeDefined();
